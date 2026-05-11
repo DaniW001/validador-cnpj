@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validador de CNPJ Alfanumérico</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <main class="container">
+        <div class="card">
+            <div class="card-header">
+                <span class="badge">Receita Federal</span>
+                <h1>Validador de CNPJ</h1>
+                <p class="description">
+                    Valida CNPJs alfanuméricos com cálculo real dos dígitos verificadores (D1 e D2).
+                </p>
+            </div>
+
+            <div class="input-group">
+                <input type="text" id="cnpj" placeholder="00.000.000/0001-00" maxlength="18" autocomplete="off" spellcheck="false">
+                <button id="validate-btn" aria-label="Validar CNPJ">
+                    Validar
+                </button>
+            </div>
+
+            <div id="message" class="message" role="alert" aria-live="polite"></div>
+
+            <div class="info-box">
+                <span class="info-icon">ⓘ</span>
+                <p>O novo formato aceita letras (A–Z) e números (0–9) nos primeiros 12 caracteres.</p>
+            </div>
+        </div>
+    </main>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
